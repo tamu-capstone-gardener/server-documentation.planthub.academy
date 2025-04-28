@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Class: PlantModulesController
+  
+    &mdash; Documentation by YARD 0.9.37
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" />
+
+<script type="text/javascript">
+  pathId = "PlantModulesController";
+  relpath = '';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="_index.html">Index (P)</a> &raquo;
+    
+    
+    <span class="title">PlantModulesController</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Class: PlantModulesController
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+  <dl>
+    <dt>Inherits:</dt>
+    <dd>
+      <span class="inheritName"><span class='object_link'><a href="AuthenticatedApplicationController.html" title="AuthenticatedApplicationController (class)">AuthenticatedApplicationController</a></span></span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">ActionController::Base</li>
+          
+            <li class="next"><span class='object_link'><a href="ApplicationController.html" title="ApplicationController (class)">ApplicationController</a></span></li>
+          
+            <li class="next"><span class='object_link'><a href="AuthenticatedApplicationController.html" title="AuthenticatedApplicationController (class)">AuthenticatedApplicationController</a></span></li>
+          
+            <li class="next">PlantModulesController</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+    </dd>
+  </dl>
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>app/controllers/plant_modules_controller.rb</dd>
+  </dl>
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Controller for managing plant modules</p>
+
+<p>This controller handles CRUD operations for plant modules, which represent physical growing setups that contain plants and sensors.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <h4 class="tag_title">Examples:</h4>
+    
+      
+        <h5 class="example_title"><div class='inline'>
+<p>Request to create a new plant module</p>
+</div></h5>
+      
+      <pre class="example code"><code>GET /plant_modules/new</code></pre>
+    
+      
+        <h5 class="example_title"><div class='inline'>
+<p>Request to view a plant module</p>
+</div></h5>
+      
+      <pre class="example code"><code>GET /plant_modules/123</code></pre>
+    
+  </div>
+
+
+</div>
+
+
+  <h2>Constant Summary</h2>
+  
+  <h3 class="inherited">Constants included
+     from <span class='object_link'><a href="ZipCodeHelper.html" title="ZipCodeHelper (module)">ZipCodeHelper</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="ZipCodeHelper.html#CSV_FILE_PATH-constant" title="ZipCodeHelper::CSV_FILE_PATH (constant)">ZipCodeHelper::CSV_FILE_PATH</a></span>, <span class='object_link'><a href="ZipCodeHelper.html#ZIP_ZONE_MAP-constant" title="ZipCodeHelper::ZIP_ZONE_MAP (constant)">ZipCodeHelper::ZIP_ZONE_MAP</a></span></p>
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#create-instance_method" title="#create (instance method)">#<strong>create</strong>  &#x21d2; void </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Creates a new plant module.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#destroy-instance_method" title="#destroy (instance method)">#<strong>destroy</strong>  &#x21d2; void </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Deletes a plant module.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#edit-instance_method" title="#edit (instance method)">#<strong>edit</strong>  &#x21d2; void </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Displays the form to edit a plant module with plant recommendations.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#generate_timelapse-instance_method" title="#generate_timelapse (instance method)">#<strong>generate_timelapse</strong>  &#x21d2; void </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Generates a timelapse video for a plant module using its photos.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#new-instance_method" title="#new (instance method)">#<strong>new</strong>  &#x21d2; void </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Displays the form to create a new plant module with plant recommendations.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#show-instance_method" title="#show (instance method)">#<strong>show</strong>  &#x21d2; void </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Displays a plant module with its sensors and control signals.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#update-instance_method" title="#update (instance method)">#<strong>update</strong>  &#x21d2; void </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Updates a plant module.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="ZipCodeHelper.html" title="ZipCodeHelper (module)">ZipCodeHelper</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="ZipCodeHelper.html#plant_in_zone%3F-instance_method" title="ZipCodeHelper#plant_in_zone? (method)">#plant_in_zone?</a></span>, <span class='object_link'><a href="ZipCodeHelper.html#zone_for_zip-instance_method" title="ZipCodeHelper#zone_for_zip (method)">#zone_for_zip</a></span></p>
+
+  
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="create-instance_method">
+  
+    #<strong>create</strong>  &#x21d2; <tt>void</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p class="note returns_void">This method returns an undefined value.</p>
+<p>Creates a new plant module</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>plant_module</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>plant module parameters</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/controllers/plant_modules_controller.rb', line 53</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_create'>create</span>
+  <span class='ivar'>@plant_module</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="PlantModule.html" title="PlantModule (class)">PlantModule</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_plant_module_params'>plant_module_params</span><span class='rparen'>)</span>
+  <span class='ivar'>@plant_module</span><span class='period'>.</span><span class='id identifier rubyid_user'>user</span> <span class='op'>=</span> <span class='id identifier rubyid_current_user'>current_user</span>
+  <span class='ivar'>@plant_module</span><span class='period'>.</span><span class='id identifier rubyid_id'>id</span> <span class='op'>=</span> <span class='const'>SecureRandom</span><span class='period'>.</span><span class='id identifier rubyid_uuid'>uuid</span>
+
+  <span class='kw'>if</span> <span class='ivar'>@plant_module</span><span class='period'>.</span><span class='id identifier rubyid_save'>save</span>
+    <span class='comment'># Calculate care schedule based on associated plants
+</span>    <span class='id identifier rubyid_schedule_attrs'>schedule_attrs</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="CareScheduleCalculator.html" title="CareScheduleCalculator (class)">CareScheduleCalculator</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="CareScheduleCalculator.html#initialize-instance_method" title="CareScheduleCalculator#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='ivar'>@plant_module</span><span class='period'>.</span><span class='id identifier rubyid_plants'>plants</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_calculate'><span class='object_link'><a href="CareScheduleCalculator.html#calculate-instance_method" title="CareScheduleCalculator#calculate (method)">calculate</a></span></span>
+    <span class='const'><span class='object_link'><a href="CareSchedule.html" title="CareSchedule (class)">CareSchedule</a></span></span><span class='period'>.</span><span class='id identifier rubyid_create!'>create!</span><span class='lparen'>(</span><span class='label'>plant_module:</span> <span class='ivar'>@plant_module</span><span class='comma'>,</span> <span class='op'>**</span><span class='id identifier rubyid_schedule_attrs'>schedule_attrs</span><span class='rparen'>)</span>
+
+    <span class='id identifier rubyid_redirect_to'>redirect_to</span> <span class='id identifier rubyid_plant_modules_path'>plant_modules_path</span><span class='comma'>,</span> <span class='label'>notice:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Plant module created successfully.</span><span class='tstring_end'>&quot;</span></span>
+  <span class='kw'>else</span>
+    <span class='id identifier rubyid_flash'>flash</span><span class='period'>.</span><span class='id identifier rubyid_now'>now</span><span class='lbracket'>[</span><span class='symbol'>:alert</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Error creating plant module.</span><span class='tstring_end'>&quot;</span></span>
+    <span class='id identifier rubyid_render'>render</span> <span class='symbol'>:new</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="destroy-instance_method">
+  
+    #<strong>destroy</strong>  &#x21d2; <tt>void</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p class="note returns_void">This method returns an undefined value.</p>
+<p>Deletes a plant module</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>id</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>ID of the plant module to delete</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+172
+173
+174
+175
+176
+177
+178
+179
+180</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/controllers/plant_modules_controller.rb', line 172</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_destroy'>destroy</span>
+  <span class='ivar'>@plant_module</span> <span class='op'>=</span> <span class='id identifier rubyid_current_user'>current_user</span><span class='period'>.</span><span class='id identifier rubyid_plant_modules'>plant_modules</span><span class='period'>.</span><span class='id identifier rubyid_find_by'>find_by</span><span class='lparen'>(</span><span class='label'>id:</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:id</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='ivar'>@plant_module</span>
+    <span class='ivar'>@plant_module</span><span class='period'>.</span><span class='id identifier rubyid_destroy'>destroy</span>
+    <span class='id identifier rubyid_redirect_to'>redirect_to</span> <span class='id identifier rubyid_plant_modules_path'>plant_modules_path</span><span class='comma'>,</span> <span class='label'>notice:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Module deleted successfully.</span><span class='tstring_end'>&quot;</span></span>
+  <span class='kw'>else</span>
+    <span class='id identifier rubyid_redirect_to'>redirect_to</span> <span class='id identifier rubyid_plant_modules_path'>plant_modules_path</span><span class='comma'>,</span> <span class='label'>alert:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Module not found.</span><span class='tstring_end'>&quot;</span></span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="edit-instance_method">
+  
+    #<strong>edit</strong>  &#x21d2; <tt>void</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p class="note returns_void">This method returns an undefined value.</p>
+<p>Displays the form to edit a plant module with plant recommendations</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>id</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>ID of the plant module to edit</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>max_height</span>
+      
+      
+        <span class='type'>(<tt>Float</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>optional maximum height filter for recommendations</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>max_width</span>
+      
+      
+        <span class='type'>(<tt>Float</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>optional maximum width filter for recommendations</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>maintenance</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>optional maintenance level filter for recommendations</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>edibility_rating</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>optional edibility rating filter for recommendations</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>page</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>optional page number for recommendations pagination</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/controllers/plant_modules_controller.rb', line 125</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_edit'>edit</span>
+  <span class='ivar'>@plant_module</span> <span class='op'>=</span> <span class='id identifier rubyid_current_user'>current_user</span><span class='period'>.</span><span class='id identifier rubyid_plant_modules'>plant_modules</span><span class='period'>.</span><span class='id identifier rubyid_find_by'>find_by</span><span class='lparen'>(</span><span class='label'>id:</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:id</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_redirect_to'>redirect_to</span> <span class='id identifier rubyid_plant_modules_path'>plant_modules_path</span><span class='comma'>,</span> <span class='label'>alert:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Module not found.</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='ivar'>@plant_module</span>
+
+  <span class='id identifier rubyid_filters'>filters</span> <span class='op'>=</span> <span class='lbrace'>{</span>
+  <span class='label'>max_height:</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:max_height</span><span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='label'>max_width:</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:max_width</span><span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='label'>maintenance:</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:maintenance</span><span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='label'>edibility_rating:</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:edibility_rating</span><span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='label'>page:</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:page</span><span class='rbracket'>]</span>
+<span class='rbrace'>}</span>
+
+<span class='ivar'>@recommendations</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="PlantRecommendationService.html" title="PlantRecommendationService (class)">PlantRecommendationService</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="PlantRecommendationService.html#initialize-instance_method" title="PlantRecommendationService#initialize (method)">new</a></span></span><span class='lparen'>(</span>
+  <span class='label'>location_type:</span> <span class='ivar'>@plant_module</span><span class='period'>.</span><span class='id identifier rubyid_location_type'>location_type</span><span class='comma'>,</span>
+  <span class='label'>filters:</span> <span class='id identifier rubyid_filters'>filters</span>
+<span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_recommendations'><span class='object_link'><a href="PlantRecommendationService.html#recommendations-instance_method" title="PlantRecommendationService#recommendations (method)">recommendations</a></span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="generate_timelapse-instance_method">
+  
+    #<strong>generate_timelapse</strong>  &#x21d2; <tt>void</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p class="note returns_void">This method returns an undefined value.</p>
+<p>Generates a timelapse video for a plant module using its photos</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>id</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>ID of the plant module to generate timelapse for</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+186
+187
+188
+189
+190</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/controllers/plant_modules_controller.rb', line 186</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_generate_timelapse'>generate_timelapse</span>
+  <span class='ivar'>@plant_module</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="PlantModule.html" title="PlantModule (class)">PlantModule</a></span></span><span class='period'>.</span><span class='id identifier rubyid_find_by'>find_by</span><span class='lparen'>(</span><span class='label'>id:</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:id</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+  <span class='const'><span class='object_link'><a href="TimelapseWorker.html" title="TimelapseWorker (class)">TimelapseWorker</a></span></span><span class='period'>.</span><span class='id identifier rubyid_perform_async'>perform_async</span><span class='lparen'>(</span><span class='ivar'>@plant_module</span><span class='period'>.</span><span class='id identifier rubyid_id'>id</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_redirect_to'>redirect_to</span> <span class='ivar'>@plant_module</span><span class='comma'>,</span> <span class='label'>notice:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Timelapse generation has started and will appear here when ready.</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="new-instance_method">
+  
+    #<strong>new</strong>  &#x21d2; <tt>void</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p class="note returns_void">This method returns an undefined value.</p>
+<p>Displays the form to create a new plant module with plant recommendations</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>max_height</span>
+      
+      
+        <span class='type'>(<tt>Float</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>optional maximum height filter for recommendations</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>max_width</span>
+      
+      
+        <span class='type'>(<tt>Float</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>optional maximum width filter for recommendations</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>maintenance</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>optional maintenance level filter for recommendations</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>edibility_rating</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>optional edibility rating filter for recommendations</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>page</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>optional page number for recommendations pagination</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/controllers/plant_modules_controller.rb', line 20</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_new'>new</span>
+  <span class='ivar'>@plant_module</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="PlantModule.html" title="PlantModule (class)">PlantModule</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='label'>location_type:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>indoor</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_filters'>filters</span> <span class='op'>=</span> <span class='lbrace'>{</span>
+    <span class='label'>max_height:</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:max_height</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='label'>max_width:</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:max_width</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='label'>maintenance:</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:maintenance</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='label'>edibility_rating:</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:edibility_rating</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='label'>page:</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:page</span><span class='rbracket'>]</span>
+  <span class='rbrace'>}</span>
+
+  <span class='ivar'>@recommendations</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="PlantRecommendationService.html" title="PlantRecommendationService (class)">PlantRecommendationService</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="PlantRecommendationService.html#initialize-instance_method" title="PlantRecommendationService#initialize (method)">new</a></span></span><span class='lparen'>(</span>
+    <span class='label'>location_type:</span> <span class='ivar'>@plant_module</span><span class='period'>.</span><span class='id identifier rubyid_location_type'>location_type</span><span class='comma'>,</span>
+    <span class='label'>filters:</span> <span class='id identifier rubyid_filters'>filters</span>
+  <span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_recommendations'><span class='object_link'><a href="PlantRecommendationService.html#recommendations-instance_method" title="PlantRecommendationService#recommendations (method)">recommendations</a></span></span>
+
+  <span class='kw'>if</span> <span class='id identifier rubyid_turbo_frame_request?'>turbo_frame_request?</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_request'>request</span><span class='period'>.</span><span class='id identifier rubyid_headers'>headers</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Turbo-Frame</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>recommendations</span><span class='tstring_end'>&quot;</span></span>
+    <span class='id identifier rubyid_render'>render</span> <span class='label'>partial:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>plants/recommendations_frame</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='label'>locals:</span> <span class='lbrace'>{</span> <span class='label'>plants:</span> <span class='ivar'>@recommendations</span> <span class='rbrace'>}</span><span class='comma'>,</span> <span class='label'>layout:</span> <span class='kw'>false</span>
+  <span class='kw'>else</span>
+    <span class='id identifier rubyid_render'>render</span> <span class='symbol'>:new</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="show-instance_method">
+  
+    #<strong>show</strong>  &#x21d2; <tt>void</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p class="note returns_void">This method returns an undefined value.</p>
+<p>Displays a plant module with its sensors and control signals</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>id</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>ID of the plant module to display</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/controllers/plant_modules_controller.rb', line 74</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_show'>show</span>
+  <span class='ivar'>@plant_module</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="PlantModule.html" title="PlantModule (class)">PlantModule</a></span></span><span class='period'>.</span><span class='id identifier rubyid_find_by'>find_by</span><span class='lparen'>(</span><span class='label'>id:</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:id</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+
+  <span class='kw'>if</span> <span class='ivar'>@plant_module</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+    <span class='id identifier rubyid_redirect_to'>redirect_to</span> <span class='id identifier rubyid_plant_modules_path'>plant_modules_path</span><span class='comma'>,</span> <span class='label'>alert:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Plant module not found.</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>and</span> <span class='kw'>return</span>
+  <span class='kw'>elsif</span> <span class='ivar'>@plant_module</span><span class='period'>.</span><span class='id identifier rubyid_user'>user</span> <span class='op'>!=</span> <span class='id identifier rubyid_current_user'>current_user</span>
+    <span class='id identifier rubyid_redirect_to'>redirect_to</span> <span class='id identifier rubyid_plant_modules_path'>plant_modules_path</span><span class='comma'>,</span> <span class='label'>alert:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>You are not authorized to access this plant module.</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>and</span> <span class='kw'>return</span>
+  <span class='kw'>end</span>
+
+  <span class='ivar'>@sensors</span> <span class='op'>=</span> <span class='ivar'>@plant_module</span><span class='period'>.</span><span class='id identifier rubyid_sensors'>sensors</span><span class='period'>.</span><span class='id identifier rubyid_includes'>includes</span><span class='lparen'>(</span><span class='symbol'>:time_series_data</span><span class='rparen'>)</span>
+  <span class='ivar'>@sensor_data</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+  <span class='ivar'>@sensors</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_sensor'>sensor</span><span class='op'>|</span>
+    <span class='id identifier rubyid_first_timestamp'>first_timestamp</span> <span class='op'>=</span> <span class='id identifier rubyid_sensor'>sensor</span><span class='period'>.</span><span class='id identifier rubyid_time_series_data'>time_series_data</span><span class='period'>.</span><span class='id identifier rubyid_minimum'>minimum</span><span class='lparen'>(</span><span class='symbol'>:timestamp</span><span class='rparen'>)</span>
+
+    <span class='kw'>if</span> <span class='id identifier rubyid_first_timestamp'>first_timestamp</span>
+      <span class='id identifier rubyid_hourly_data'>hourly_data</span> <span class='op'>=</span> <span class='id identifier rubyid_sensor'>sensor</span><span class='period'>.</span><span class='id identifier rubyid_time_series_data'>time_series_data</span>
+                          <span class='period'>.</span><span class='id identifier rubyid_where'>where</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>timestamp &gt;= ?</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_first_timestamp'>first_timestamp</span><span class='rparen'>)</span>
+                          <span class='period'>.</span><span class='id identifier rubyid_group_by_hour'>group_by_hour</span><span class='lparen'>(</span><span class='symbol'>:timestamp</span><span class='rparen'>)</span>
+                          <span class='period'>.</span><span class='id identifier rubyid_average'>average</span><span class='lparen'>(</span><span class='symbol'>:value</span><span class='rparen'>)</span>
+                          <span class='period'>.</span><span class='id identifier rubyid_transform_values'>transform_values</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_v'>v</span><span class='op'>|</span>
+                            <span class='kw'>next</span> <span class='kw'>nil</span> <span class='kw'>if</span> <span class='id identifier rubyid_v'>v</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+                            <span class='id identifier rubyid_value'>value</span> <span class='op'>=</span> <span class='id identifier rubyid_v'>v</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span>
+                            <span class='kw'>if</span> <span class='id identifier rubyid_sensor'>sensor</span><span class='period'>.</span><span class='id identifier rubyid_measurement_type'>measurement_type</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>light_analog</span><span class='tstring_end'>&quot;</span></span>
+                              <span class='lparen'>(</span><span class='lparen'>(</span><span class='int'>4096</span> <span class='op'>-</span> <span class='id identifier rubyid_value'>value</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_abs'>abs</span> <span class='op'>/</span> <span class='float'>4096.0</span> <span class='op'>*</span> <span class='int'>100</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_round'>round</span><span class='lparen'>(</span><span class='int'>2</span><span class='rparen'>)</span>
+                            <span class='kw'>else</span>
+                              <span class='id identifier rubyid_value'>value</span><span class='period'>.</span><span class='id identifier rubyid_round'>round</span><span class='lparen'>(</span><span class='int'>2</span><span class='rparen'>)</span>
+                            <span class='kw'>end</span>
+                          <span class='kw'>end</span>
+
+      <span class='ivar'>@sensor_data</span><span class='lbracket'>[</span><span class='id identifier rubyid_sensor'>sensor</span><span class='period'>.</span><span class='id identifier rubyid_id'>id</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_hourly_data'>hourly_data</span>
+    <span class='kw'>else</span>
+      <span class='ivar'>@sensor_data</span><span class='lbracket'>[</span><span class='id identifier rubyid_sensor'>sensor</span><span class='period'>.</span><span class='id identifier rubyid_id'>id</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
+
+  <span class='ivar'>@control_signals</span> <span class='op'>=</span> <span class='ivar'>@plant_module</span><span class='period'>.</span><span class='id identifier rubyid_control_signals'>control_signals</span><span class='period'>.</span><span class='id identifier rubyid_includes'>includes</span><span class='lparen'>(</span><span class='symbol'>:last_execution</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_order'>order</span><span class='lparen'>(</span><span class='symbol'>:signal_type</span><span class='rparen'>)</span>
+
+  <span class='kw'>if</span> <span class='ivar'>@plant_module</span><span class='period'>.</span><span class='id identifier rubyid_location_type'>location_type</span><span class='period'>.</span><span class='id identifier rubyid_downcase'>downcase</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>outdoor</span><span class='tstring_end'>&quot;</span></span> <span class='op'>&amp;&amp;</span> <span class='ivar'>@plant_module</span><span class='period'>.</span><span class='id identifier rubyid_zip_code'>zip_code</span><span class='period'>.</span><span class='id identifier rubyid_present?'>present?</span>
+    <span class='ivar'>@zone_data</span> <span class='op'>=</span> <span class='id identifier rubyid_zone_for_zip'>zone_for_zip</span><span class='lparen'>(</span><span class='ivar'>@plant_module</span><span class='period'>.</span><span class='id identifier rubyid_zip_code'>zip_code</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="update-instance_method">
+  
+    #<strong>update</strong>  &#x21d2; <tt>void</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p class="note returns_void">This method returns an undefined value.</p>
+<p>Updates a plant module</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>id</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>ID of the plant module to update</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>plant_module</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>plant module parameters</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/controllers/plant_modules_controller.rb', line 154</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_update'>update</span>
+  <span class='ivar'>@plant_module</span> <span class='op'>=</span> <span class='id identifier rubyid_current_user'>current_user</span><span class='period'>.</span><span class='id identifier rubyid_plant_modules'>plant_modules</span><span class='period'>.</span><span class='id identifier rubyid_find_by'>find_by</span><span class='lparen'>(</span><span class='label'>id:</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:id</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+  <span class='kw'>unless</span> <span class='ivar'>@plant_module</span>
+    <span class='id identifier rubyid_redirect_to'>redirect_to</span> <span class='id identifier rubyid_plant_modules_path'>plant_modules_path</span><span class='comma'>,</span> <span class='label'>alert:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Module not found.</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>and</span> <span class='kw'>return</span>
+  <span class='kw'>end</span>
+
+  <span class='kw'>if</span> <span class='ivar'>@plant_module</span><span class='period'>.</span><span class='id identifier rubyid_update'>update</span><span class='lparen'>(</span><span class='id identifier rubyid_plant_module_params'>plant_module_params</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_redirect_to'>redirect_to</span> <span class='ivar'>@plant_module</span><span class='comma'>,</span> <span class='label'>notice:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Module updated successfully.</span><span class='tstring_end'>&quot;</span></span>
+  <span class='kw'>else</span>
+    <span class='id identifier rubyid_flash'>flash</span><span class='period'>.</span><span class='id identifier rubyid_now'>now</span><span class='lbracket'>[</span><span class='symbol'>:alert</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Error updating module.</span><span class='tstring_end'>&quot;</span></span>
+    <span class='id identifier rubyid_render'>render</span> <span class='symbol'>:edit</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Sun Apr 27 23:13:09 2025 by
+  <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.37 (ruby-3.4.1).
+</div>
+
+    </div>
+  </body>
+</html>

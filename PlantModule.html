@@ -1,0 +1,1476 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Class: PlantModule
+  
+    &mdash; Documentation by YARD 0.9.37
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" />
+
+<script type="text/javascript">
+  pathId = "PlantModule";
+  relpath = '';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="_index.html">Index (P)</a> &raquo;
+    
+    
+    <span class="title">PlantModule</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Class: PlantModule
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+  <dl>
+    <dt>Inherits:</dt>
+    <dd>
+      <span class="inheritName"><span class='object_link'><a href="ApplicationRecord.html" title="ApplicationRecord (class)">ApplicationRecord</a></span></span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">ActiveRecord::Base</li>
+          
+            <li class="next"><span class='object_link'><a href="ApplicationRecord.html" title="ApplicationRecord (class)">ApplicationRecord</a></span></li>
+          
+            <li class="next">PlantModule</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+    </dd>
+  </dl>
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>app/models/plant_module.rb</dd>
+  </dl>
+  
+</div>
+
+
+
+
+
+  <h2>Instance Attribute Summary <small><a href="#" class="summary_toggle">collapse</a></small></h2>
+  <ul class="summary">
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#created_at-instance_method" title="#created_at (instance method)">#<strong>created_at</strong>  &#x21d2; DateTime </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>When the module was created.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#id-instance_method" title="#id (instance method)">#<strong>id</strong>  &#x21d2; Integer </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Unique identifier for the plant module.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#location-instance_method" title="#location (instance method)">#<strong>location</strong>  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Physical location of the module.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#module_ip-instance_method" title="#module_ip (instance method)">#<strong>module_ip</strong>  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>IP address of the hardware module.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#module_mac-instance_method" title="#module_mac (instance method)">#<strong>module_mac</strong>  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>MAC address of the hardware module.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#name-instance_method" title="#name (instance method)">#<strong>name</strong>  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Name of the plant module.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#timelapse_video-instance_method" title="#timelapse_video (instance method)">#<strong>timelapse_video</strong>  &#x21d2; ActiveStorage::Attached::One </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Attached timelapse video file.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#updated_at-instance_method" title="#updated_at (instance method)">#<strong>updated_at</strong>  &#x21d2; DateTime </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>When the module was last updated.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#user_id-instance_method" title="#user_id (instance method)">#<strong>user_id</strong>  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Reference to the user who owns this module.</p>
+</div></span>
+  
+</li>
+
+    
+  </ul>
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  <div id="instance_attr_details" class="attr_details">
+    <h2>Instance Attribute Details</h2>
+    
+      
+      <span id="created_at=-instance_method"></span>
+      <div class="method_details first">
+  <h3 class="signature first" id="created_at-instance_method">
+  
+    #<strong>created_at</strong>  &#x21d2; <tt>DateTime</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns when the module was created.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>DateTime</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>when the module was created</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/models/plant_module.rb', line 17</span>
+
+<span class='kw'>class</span> <span class='const'><span class='object_link'><a href="" title="PlantModule (class)">PlantModule</a></span></span> <span class='op'>&lt;</span> <span class='const'><span class='object_link'><a href="ApplicationRecord.html" title="ApplicationRecord (class)">ApplicationRecord</a></span></span>
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [User] the user who owns this module
+</span>  <span class='id identifier rubyid_belongs_to'>belongs_to</span> <span class='symbol'>:user</span><span class='comma'>,</span> <span class='label'>primary_key:</span> <span class='symbol'>:uid</span><span class='comma'>,</span> <span class='label'>foreign_key:</span> <span class='symbol'>:user_id</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [Array&lt;Sensor&gt;] sensors attached to this module
+</span>  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:sensors</span><span class='comma'>,</span> <span class='label'>dependent:</span> <span class='symbol'>:destroy</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [Array&lt;ModulePlant&gt;] join model between modules and plants
+</span>  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:module_plants</span><span class='comma'>,</span> <span class='label'>dependent:</span> <span class='symbol'>:destroy</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [Array&lt;Plant&gt;] plants contained in this module
+</span>  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:plants</span><span class='comma'>,</span> <span class='label'>through:</span> <span class='symbol'>:module_plants</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [CareSchedule] care schedule for this module
+</span>  <span class='id identifier rubyid_has_one'>has_one</span> <span class='symbol'>:care_schedule</span><span class='comma'>,</span> <span class='label'>dependent:</span> <span class='symbol'>:destroy</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [Array&lt;Schedule&gt;] schedules for this module
+</span>  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:schedules</span><span class='comma'>,</span> <span class='label'>dependent:</span> <span class='symbol'>:destroy</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [Array&lt;Photo&gt;] photos of this module
+</span>  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:photos</span><span class='comma'>,</span> <span class='label'>dependent:</span> <span class='symbol'>:destroy</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [Array&lt;ControlSignal&gt;] control signals for this module
+</span>  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:control_signals</span><span class='comma'>,</span> <span class='label'>dependent:</span> <span class='symbol'>:destroy</span>
+
+  <span class='comment'># @!attribute [rw] timelapse_video
+</span>  <span class='comment'>#   @return [ActiveStorage::Attached::One] attached timelapse video file
+</span>  <span class='id identifier rubyid_has_one_attached'>has_one_attached</span> <span class='symbol'>:timelapse_video</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="id-instance_method">
+  
+    #<strong>id</strong>  &#x21d2; <tt>Integer</tt>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns unique identifier for the plant module.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>unique identifier for the plant module</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/models/plant_module.rb', line 17</span>
+
+<span class='kw'>class</span> <span class='const'><span class='object_link'><a href="" title="PlantModule (class)">PlantModule</a></span></span> <span class='op'>&lt;</span> <span class='const'><span class='object_link'><a href="ApplicationRecord.html" title="ApplicationRecord (class)">ApplicationRecord</a></span></span>
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [User] the user who owns this module
+</span>  <span class='id identifier rubyid_belongs_to'>belongs_to</span> <span class='symbol'>:user</span><span class='comma'>,</span> <span class='label'>primary_key:</span> <span class='symbol'>:uid</span><span class='comma'>,</span> <span class='label'>foreign_key:</span> <span class='symbol'>:user_id</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [Array&lt;Sensor&gt;] sensors attached to this module
+</span>  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:sensors</span><span class='comma'>,</span> <span class='label'>dependent:</span> <span class='symbol'>:destroy</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [Array&lt;ModulePlant&gt;] join model between modules and plants
+</span>  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:module_plants</span><span class='comma'>,</span> <span class='label'>dependent:</span> <span class='symbol'>:destroy</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [Array&lt;Plant&gt;] plants contained in this module
+</span>  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:plants</span><span class='comma'>,</span> <span class='label'>through:</span> <span class='symbol'>:module_plants</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [CareSchedule] care schedule for this module
+</span>  <span class='id identifier rubyid_has_one'>has_one</span> <span class='symbol'>:care_schedule</span><span class='comma'>,</span> <span class='label'>dependent:</span> <span class='symbol'>:destroy</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [Array&lt;Schedule&gt;] schedules for this module
+</span>  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:schedules</span><span class='comma'>,</span> <span class='label'>dependent:</span> <span class='symbol'>:destroy</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [Array&lt;Photo&gt;] photos of this module
+</span>  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:photos</span><span class='comma'>,</span> <span class='label'>dependent:</span> <span class='symbol'>:destroy</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [Array&lt;ControlSignal&gt;] control signals for this module
+</span>  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:control_signals</span><span class='comma'>,</span> <span class='label'>dependent:</span> <span class='symbol'>:destroy</span>
+
+  <span class='comment'># @!attribute [rw] timelapse_video
+</span>  <span class='comment'>#   @return [ActiveStorage::Attached::One] attached timelapse video file
+</span>  <span class='id identifier rubyid_has_one_attached'>has_one_attached</span> <span class='symbol'>:timelapse_video</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="location=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="location-instance_method">
+  
+    #<strong>location</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns physical location of the module.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>physical location of the module</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/models/plant_module.rb', line 17</span>
+
+<span class='kw'>class</span> <span class='const'><span class='object_link'><a href="" title="PlantModule (class)">PlantModule</a></span></span> <span class='op'>&lt;</span> <span class='const'><span class='object_link'><a href="ApplicationRecord.html" title="ApplicationRecord (class)">ApplicationRecord</a></span></span>
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [User] the user who owns this module
+</span>  <span class='id identifier rubyid_belongs_to'>belongs_to</span> <span class='symbol'>:user</span><span class='comma'>,</span> <span class='label'>primary_key:</span> <span class='symbol'>:uid</span><span class='comma'>,</span> <span class='label'>foreign_key:</span> <span class='symbol'>:user_id</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [Array&lt;Sensor&gt;] sensors attached to this module
+</span>  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:sensors</span><span class='comma'>,</span> <span class='label'>dependent:</span> <span class='symbol'>:destroy</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [Array&lt;ModulePlant&gt;] join model between modules and plants
+</span>  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:module_plants</span><span class='comma'>,</span> <span class='label'>dependent:</span> <span class='symbol'>:destroy</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [Array&lt;Plant&gt;] plants contained in this module
+</span>  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:plants</span><span class='comma'>,</span> <span class='label'>through:</span> <span class='symbol'>:module_plants</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [CareSchedule] care schedule for this module
+</span>  <span class='id identifier rubyid_has_one'>has_one</span> <span class='symbol'>:care_schedule</span><span class='comma'>,</span> <span class='label'>dependent:</span> <span class='symbol'>:destroy</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [Array&lt;Schedule&gt;] schedules for this module
+</span>  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:schedules</span><span class='comma'>,</span> <span class='label'>dependent:</span> <span class='symbol'>:destroy</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [Array&lt;Photo&gt;] photos of this module
+</span>  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:photos</span><span class='comma'>,</span> <span class='label'>dependent:</span> <span class='symbol'>:destroy</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [Array&lt;ControlSignal&gt;] control signals for this module
+</span>  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:control_signals</span><span class='comma'>,</span> <span class='label'>dependent:</span> <span class='symbol'>:destroy</span>
+
+  <span class='comment'># @!attribute [rw] timelapse_video
+</span>  <span class='comment'>#   @return [ActiveStorage::Attached::One] attached timelapse video file
+</span>  <span class='id identifier rubyid_has_one_attached'>has_one_attached</span> <span class='symbol'>:timelapse_video</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="module_ip=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="module_ip-instance_method">
+  
+    #<strong>module_ip</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns IP address of the hardware module.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>IP address of the hardware module</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/models/plant_module.rb', line 17</span>
+
+<span class='kw'>class</span> <span class='const'><span class='object_link'><a href="" title="PlantModule (class)">PlantModule</a></span></span> <span class='op'>&lt;</span> <span class='const'><span class='object_link'><a href="ApplicationRecord.html" title="ApplicationRecord (class)">ApplicationRecord</a></span></span>
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [User] the user who owns this module
+</span>  <span class='id identifier rubyid_belongs_to'>belongs_to</span> <span class='symbol'>:user</span><span class='comma'>,</span> <span class='label'>primary_key:</span> <span class='symbol'>:uid</span><span class='comma'>,</span> <span class='label'>foreign_key:</span> <span class='symbol'>:user_id</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [Array&lt;Sensor&gt;] sensors attached to this module
+</span>  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:sensors</span><span class='comma'>,</span> <span class='label'>dependent:</span> <span class='symbol'>:destroy</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [Array&lt;ModulePlant&gt;] join model between modules and plants
+</span>  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:module_plants</span><span class='comma'>,</span> <span class='label'>dependent:</span> <span class='symbol'>:destroy</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [Array&lt;Plant&gt;] plants contained in this module
+</span>  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:plants</span><span class='comma'>,</span> <span class='label'>through:</span> <span class='symbol'>:module_plants</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [CareSchedule] care schedule for this module
+</span>  <span class='id identifier rubyid_has_one'>has_one</span> <span class='symbol'>:care_schedule</span><span class='comma'>,</span> <span class='label'>dependent:</span> <span class='symbol'>:destroy</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [Array&lt;Schedule&gt;] schedules for this module
+</span>  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:schedules</span><span class='comma'>,</span> <span class='label'>dependent:</span> <span class='symbol'>:destroy</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [Array&lt;Photo&gt;] photos of this module
+</span>  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:photos</span><span class='comma'>,</span> <span class='label'>dependent:</span> <span class='symbol'>:destroy</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [Array&lt;ControlSignal&gt;] control signals for this module
+</span>  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:control_signals</span><span class='comma'>,</span> <span class='label'>dependent:</span> <span class='symbol'>:destroy</span>
+
+  <span class='comment'># @!attribute [rw] timelapse_video
+</span>  <span class='comment'>#   @return [ActiveStorage::Attached::One] attached timelapse video file
+</span>  <span class='id identifier rubyid_has_one_attached'>has_one_attached</span> <span class='symbol'>:timelapse_video</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="module_mac=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="module_mac-instance_method">
+  
+    #<strong>module_mac</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns MAC address of the hardware module.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>MAC address of the hardware module</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/models/plant_module.rb', line 17</span>
+
+<span class='kw'>class</span> <span class='const'><span class='object_link'><a href="" title="PlantModule (class)">PlantModule</a></span></span> <span class='op'>&lt;</span> <span class='const'><span class='object_link'><a href="ApplicationRecord.html" title="ApplicationRecord (class)">ApplicationRecord</a></span></span>
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [User] the user who owns this module
+</span>  <span class='id identifier rubyid_belongs_to'>belongs_to</span> <span class='symbol'>:user</span><span class='comma'>,</span> <span class='label'>primary_key:</span> <span class='symbol'>:uid</span><span class='comma'>,</span> <span class='label'>foreign_key:</span> <span class='symbol'>:user_id</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [Array&lt;Sensor&gt;] sensors attached to this module
+</span>  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:sensors</span><span class='comma'>,</span> <span class='label'>dependent:</span> <span class='symbol'>:destroy</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [Array&lt;ModulePlant&gt;] join model between modules and plants
+</span>  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:module_plants</span><span class='comma'>,</span> <span class='label'>dependent:</span> <span class='symbol'>:destroy</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [Array&lt;Plant&gt;] plants contained in this module
+</span>  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:plants</span><span class='comma'>,</span> <span class='label'>through:</span> <span class='symbol'>:module_plants</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [CareSchedule] care schedule for this module
+</span>  <span class='id identifier rubyid_has_one'>has_one</span> <span class='symbol'>:care_schedule</span><span class='comma'>,</span> <span class='label'>dependent:</span> <span class='symbol'>:destroy</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [Array&lt;Schedule&gt;] schedules for this module
+</span>  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:schedules</span><span class='comma'>,</span> <span class='label'>dependent:</span> <span class='symbol'>:destroy</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [Array&lt;Photo&gt;] photos of this module
+</span>  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:photos</span><span class='comma'>,</span> <span class='label'>dependent:</span> <span class='symbol'>:destroy</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [Array&lt;ControlSignal&gt;] control signals for this module
+</span>  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:control_signals</span><span class='comma'>,</span> <span class='label'>dependent:</span> <span class='symbol'>:destroy</span>
+
+  <span class='comment'># @!attribute [rw] timelapse_video
+</span>  <span class='comment'>#   @return [ActiveStorage::Attached::One] attached timelapse video file
+</span>  <span class='id identifier rubyid_has_one_attached'>has_one_attached</span> <span class='symbol'>:timelapse_video</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="name=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="name-instance_method">
+  
+    #<strong>name</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns name of the plant module.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>name of the plant module</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/models/plant_module.rb', line 17</span>
+
+<span class='kw'>class</span> <span class='const'><span class='object_link'><a href="" title="PlantModule (class)">PlantModule</a></span></span> <span class='op'>&lt;</span> <span class='const'><span class='object_link'><a href="ApplicationRecord.html" title="ApplicationRecord (class)">ApplicationRecord</a></span></span>
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [User] the user who owns this module
+</span>  <span class='id identifier rubyid_belongs_to'>belongs_to</span> <span class='symbol'>:user</span><span class='comma'>,</span> <span class='label'>primary_key:</span> <span class='symbol'>:uid</span><span class='comma'>,</span> <span class='label'>foreign_key:</span> <span class='symbol'>:user_id</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [Array&lt;Sensor&gt;] sensors attached to this module
+</span>  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:sensors</span><span class='comma'>,</span> <span class='label'>dependent:</span> <span class='symbol'>:destroy</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [Array&lt;ModulePlant&gt;] join model between modules and plants
+</span>  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:module_plants</span><span class='comma'>,</span> <span class='label'>dependent:</span> <span class='symbol'>:destroy</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [Array&lt;Plant&gt;] plants contained in this module
+</span>  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:plants</span><span class='comma'>,</span> <span class='label'>through:</span> <span class='symbol'>:module_plants</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [CareSchedule] care schedule for this module
+</span>  <span class='id identifier rubyid_has_one'>has_one</span> <span class='symbol'>:care_schedule</span><span class='comma'>,</span> <span class='label'>dependent:</span> <span class='symbol'>:destroy</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [Array&lt;Schedule&gt;] schedules for this module
+</span>  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:schedules</span><span class='comma'>,</span> <span class='label'>dependent:</span> <span class='symbol'>:destroy</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [Array&lt;Photo&gt;] photos of this module
+</span>  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:photos</span><span class='comma'>,</span> <span class='label'>dependent:</span> <span class='symbol'>:destroy</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [Array&lt;ControlSignal&gt;] control signals for this module
+</span>  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:control_signals</span><span class='comma'>,</span> <span class='label'>dependent:</span> <span class='symbol'>:destroy</span>
+
+  <span class='comment'># @!attribute [rw] timelapse_video
+</span>  <span class='comment'>#   @return [ActiveStorage::Attached::One] attached timelapse video file
+</span>  <span class='id identifier rubyid_has_one_attached'>has_one_attached</span> <span class='symbol'>:timelapse_video</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="timelapse_video=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="timelapse_video-instance_method">
+  
+    #<strong>timelapse_video</strong>  &#x21d2; <tt>ActiveStorage::Attached::One</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns attached timelapse video file.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>ActiveStorage::Attached::One</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>attached timelapse video file</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+52</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/models/plant_module.rb', line 52</span>
+
+<span class='id identifier rubyid_has_one_attached'>has_one_attached</span> <span class='symbol'>:timelapse_video</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="updated_at=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="updated_at-instance_method">
+  
+    #<strong>updated_at</strong>  &#x21d2; <tt>DateTime</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns when the module was last updated.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>DateTime</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>when the module was last updated</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/models/plant_module.rb', line 17</span>
+
+<span class='kw'>class</span> <span class='const'><span class='object_link'><a href="" title="PlantModule (class)">PlantModule</a></span></span> <span class='op'>&lt;</span> <span class='const'><span class='object_link'><a href="ApplicationRecord.html" title="ApplicationRecord (class)">ApplicationRecord</a></span></span>
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [User] the user who owns this module
+</span>  <span class='id identifier rubyid_belongs_to'>belongs_to</span> <span class='symbol'>:user</span><span class='comma'>,</span> <span class='label'>primary_key:</span> <span class='symbol'>:uid</span><span class='comma'>,</span> <span class='label'>foreign_key:</span> <span class='symbol'>:user_id</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [Array&lt;Sensor&gt;] sensors attached to this module
+</span>  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:sensors</span><span class='comma'>,</span> <span class='label'>dependent:</span> <span class='symbol'>:destroy</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [Array&lt;ModulePlant&gt;] join model between modules and plants
+</span>  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:module_plants</span><span class='comma'>,</span> <span class='label'>dependent:</span> <span class='symbol'>:destroy</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [Array&lt;Plant&gt;] plants contained in this module
+</span>  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:plants</span><span class='comma'>,</span> <span class='label'>through:</span> <span class='symbol'>:module_plants</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [CareSchedule] care schedule for this module
+</span>  <span class='id identifier rubyid_has_one'>has_one</span> <span class='symbol'>:care_schedule</span><span class='comma'>,</span> <span class='label'>dependent:</span> <span class='symbol'>:destroy</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [Array&lt;Schedule&gt;] schedules for this module
+</span>  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:schedules</span><span class='comma'>,</span> <span class='label'>dependent:</span> <span class='symbol'>:destroy</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [Array&lt;Photo&gt;] photos of this module
+</span>  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:photos</span><span class='comma'>,</span> <span class='label'>dependent:</span> <span class='symbol'>:destroy</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [Array&lt;ControlSignal&gt;] control signals for this module
+</span>  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:control_signals</span><span class='comma'>,</span> <span class='label'>dependent:</span> <span class='symbol'>:destroy</span>
+
+  <span class='comment'># @!attribute [rw] timelapse_video
+</span>  <span class='comment'>#   @return [ActiveStorage::Attached::One] attached timelapse video file
+</span>  <span class='id identifier rubyid_has_one_attached'>has_one_attached</span> <span class='symbol'>:timelapse_video</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="user_id=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="user_id-instance_method">
+  
+    #<strong>user_id</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns reference to the user who owns this module.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>reference to the user who owns this module</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/models/plant_module.rb', line 17</span>
+
+<span class='kw'>class</span> <span class='const'><span class='object_link'><a href="" title="PlantModule (class)">PlantModule</a></span></span> <span class='op'>&lt;</span> <span class='const'><span class='object_link'><a href="ApplicationRecord.html" title="ApplicationRecord (class)">ApplicationRecord</a></span></span>
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [User] the user who owns this module
+</span>  <span class='id identifier rubyid_belongs_to'>belongs_to</span> <span class='symbol'>:user</span><span class='comma'>,</span> <span class='label'>primary_key:</span> <span class='symbol'>:uid</span><span class='comma'>,</span> <span class='label'>foreign_key:</span> <span class='symbol'>:user_id</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [Array&lt;Sensor&gt;] sensors attached to this module
+</span>  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:sensors</span><span class='comma'>,</span> <span class='label'>dependent:</span> <span class='symbol'>:destroy</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [Array&lt;ModulePlant&gt;] join model between modules and plants
+</span>  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:module_plants</span><span class='comma'>,</span> <span class='label'>dependent:</span> <span class='symbol'>:destroy</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [Array&lt;Plant&gt;] plants contained in this module
+</span>  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:plants</span><span class='comma'>,</span> <span class='label'>through:</span> <span class='symbol'>:module_plants</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [CareSchedule] care schedule for this module
+</span>  <span class='id identifier rubyid_has_one'>has_one</span> <span class='symbol'>:care_schedule</span><span class='comma'>,</span> <span class='label'>dependent:</span> <span class='symbol'>:destroy</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [Array&lt;Schedule&gt;] schedules for this module
+</span>  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:schedules</span><span class='comma'>,</span> <span class='label'>dependent:</span> <span class='symbol'>:destroy</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [Array&lt;Photo&gt;] photos of this module
+</span>  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:photos</span><span class='comma'>,</span> <span class='label'>dependent:</span> <span class='symbol'>:destroy</span>
+
+  <span class='comment'># @!association
+</span>  <span class='comment'>#   @return [Array&lt;ControlSignal&gt;] control signals for this module
+</span>  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:control_signals</span><span class='comma'>,</span> <span class='label'>dependent:</span> <span class='symbol'>:destroy</span>
+
+  <span class='comment'># @!attribute [rw] timelapse_video
+</span>  <span class='comment'>#   @return [ActiveStorage::Attached::One] attached timelapse video file
+</span>  <span class='id identifier rubyid_has_one_attached'>has_one_attached</span> <span class='symbol'>:timelapse_video</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+
+</div>
+
+      <div id="footer">
+  Generated on Sun Apr 27 23:13:08 2025 by
+  <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.37 (ruby-3.4.1).
+</div>
+
+    </div>
+  </body>
+</html>
